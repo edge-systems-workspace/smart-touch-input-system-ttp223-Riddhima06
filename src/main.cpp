@@ -28,10 +28,18 @@ void loop() {
 
     touchState = digitalRead(touchPin);
 
-    if(touchState == HIGH) {
+    if (touchState == HIGH) {
+
+        digitalWrite(ledPin, HIGH);
+
         Serial.println("Touch Detected");
+
     } else {
+
+        digitalWrite(ledPin, LOW);
+
         Serial.println("No Touch");
+
     }
 
     delay(200);
