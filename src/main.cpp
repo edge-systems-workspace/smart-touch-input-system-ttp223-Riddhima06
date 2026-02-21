@@ -20,8 +20,7 @@ void setup() {
 
     pinMode(touchPin, INPUT);
 
-    // TODO 5:
-    // Print system initialization message
+    Serial.println("TTP223 Touch Detection System Initialized");
 }
 
 void loop() {
