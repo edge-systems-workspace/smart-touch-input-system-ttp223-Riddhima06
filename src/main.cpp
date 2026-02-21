@@ -11,7 +11,7 @@
  */
 
 int touchPin = 2;
-
+int ledPin = 13;
 int touchState;
 
 void setup() {
@@ -19,6 +19,7 @@ void setup() {
     Serial.begin(9600);
 
     pinMode(touchPin, INPUT);
+    pinMode(ledPin, OUTPUT);
 
     Serial.println("TTP223 Touch Detection System Initialized");
 }
