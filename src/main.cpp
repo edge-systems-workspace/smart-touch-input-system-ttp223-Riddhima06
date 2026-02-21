@@ -12,8 +12,7 @@
 
 int touchPin = 2;
 
- // TODO 2:
- // Create variable to store touch state
+int touchState;
 
 void setup() {
 
